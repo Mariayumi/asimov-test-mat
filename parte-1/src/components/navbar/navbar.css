@@ -1,0 +1,27 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+
+  .links_uteis {
+    display: flex !important;
+    gap: 40px;
+    align-items: center;
+  }
+}
+
+a {
+  text-decoration: none;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 20px;
+  color: var(--black);
+  transition: 0.5s;
+}
+
+a:hover {
+  color: var(--green);
+  transition: 0.5s;
+  font-weight: 500;
+}

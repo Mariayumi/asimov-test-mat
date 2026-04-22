@@ -1,0 +1,100 @@
+/* Geral */
+.titulo-section {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  margin-bottom: 85px;
+
+  h2 {
+    border-radius: 7px;
+    padding: 7px;
+    display: inline;
+    width: fit-content;
+    background-color: var(--green);
+  }
+}
+
+/* Hero Section */
+.hero-images {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 515px;
+  width: 600px;
+}
+
+.img-rings {
+  position: absolute;
+  z-index: 1;
+  max-width: 100%;
+}
+
+/* O Megafone fica por cima */
+.img-megafone {
+  z-index: 2;
+  transition: transform 0.1s ease-out;
+  transform-origin: center;
+}
+
+/* Make Things Section */
+.make-things-wrapper {
+  padding: 60px 0;
+}
+
+.make_things_section {
+  display: flex;
+  background-color: var(--grey);
+  border-radius: 45px;
+  padding: 60px;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.make-things-content {
+  max-width: 50%;
+  display: grid;
+  gap: 26px;
+}
+
+.make-things-images {
+  position: relative;
+  width: 40%;
+  height: 200px;
+}
+
+.img-bg {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  width: 100%;
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-50px) rotate(0deg);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.img-character {
+  position: absolute;
+  z-index: 2;
+  left: 30px;
+  top: 20px;
+  width: 35%;
+
+  transition: transform 0.5s ease-out;
+}
+
+.make-things-images:hover .img-character {
+  animation: jump 0.9s ease-in-out infinite;
+}

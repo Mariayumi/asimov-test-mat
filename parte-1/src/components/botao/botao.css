@@ -1,0 +1,61 @@
+.botao {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  text-align: center;
+  padding: 20px 35px;
+  border-radius: 14px;
+  transition: 0.3s;
+  width: fit-content;
+
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease;
+  cursor: pointer;
+  font-family: "Space Grotesk", sans-serif !important;
+}
+
+.botao::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  transition: all 1s;
+}
+
+.botao:hover::before {
+  left: 100%;
+}
+
+.botao:hover {
+  transform: scale(1.05);
+}
+
+.btn-primary {
+  color: var(--white);
+  background-color: var(--dark);
+  border: 1px solid transparent;
+}
+
+.btn-outlined {
+  color: var(--dark);
+  background-color: transparent;
+  border: 1px solid var(--dark);
+}
+
+.btn-link {
+  color: var(--green);
+  background-color: transparent;
+  border: 1px solid transparent;
+}
