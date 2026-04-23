@@ -5,10 +5,16 @@
   gap: 40px;
 }
 
-@media (max-width: 1140px) {
+@media (max-width: 1024px) {
+  .services-cards-container {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
   .services-cards-container {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 20px;
   }
 }

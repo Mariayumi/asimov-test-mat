@@ -1,7 +1,6 @@
 import { Link } from "react-router";
 import "../../page.css";
 import "./case_studies.css";
-import React from "react";
 import { arrow_green } from "../../../assets";
 
 export default function CaseStudiesSection() {
@@ -40,7 +39,12 @@ export default function CaseStudiesSection() {
               <div className="case-study">
                 <p>{caseStudy.description}</p>
                 <Link to={caseStudy.link}>
-                  Learn More <img src={arrow_green} alt="Arrow" className="case-study-arrow" />
+                  Learn More{" "}
+                  <img
+                    src={arrow_green}
+                    alt="Arrow"
+                    className="case-study-arrow"
+                  />
                 </Link>
               </div>
             </div>
