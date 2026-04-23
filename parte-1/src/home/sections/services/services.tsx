@@ -1,3 +1,5 @@
+import "../../page.css";
+import "./services.css";
 import {
   click,
   comments,
@@ -5,8 +7,8 @@ import {
   dashboard,
   letters,
   search,
-} from "../../assets";
-import Card, { type CardTheme } from "../../components/card/card";
+} from "../../../assets";
+import Card, { type CardTheme } from "../../../components/card/card";
 
 export const listaServicos = [
   {
@@ -53,13 +55,7 @@ export default function ServicesSection() {
           businesses grow and succeed online. These services include:
         </p>
       </div>
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(2, 1fr)",
-          gap: "40px",
-        }}
-      >
+      <div className="services-cards-container">
         {listaServicos.map((servico, index) => (
           <Card
             titulo1={servico.titulo1}

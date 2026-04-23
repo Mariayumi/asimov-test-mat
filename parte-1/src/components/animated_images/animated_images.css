@@ -1,0 +1,30 @@
+.tilted-card-figure {
+  position: relative;
+  perspective: 1000px; /* Aumentado para um efeito 3D mais suave */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+/* Imagem que fica parada ao fundo */
+.tilted-card-static {
+  position: absolute;
+  object-fit: contain;
+  z-index: 1;
+  pointer-events: none; /* Garante que o mouse interaja com o container de cima */
+}
+
+.tilted-card-inner {
+  position: relative;
+  z-index: 2;
+  transform-style: preserve-3d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tilted-card-img {
+  object-fit: contain;
+  will-change: transform;
+}

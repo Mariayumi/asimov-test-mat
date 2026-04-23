@@ -2,22 +2,39 @@ import { Link } from "react-router-dom";
 import "./navbar.css";
 import Botao from "../botao/botao";
 import { logo } from "../../assets";
+import { useEffect, useState } from "react";
+import { TextAlignJustify, X } from "lucide-react";
 
 export default function Navbar() {
+  const [menuAberto, setMenuAberto] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuAberto(!menuAberto);
+  };
+
+  useEffect(() => {
+    document.body.style.overflow = menuAberto ? "hidden" : "unset";
+  }, [menuAberto]);
+
   return (
-    <nav>
-      <img src={logo} alt="Positivus Free" />
-      <div className="links_uteis">
-        <Link typeof="" to="/">
+    <nav className="navbar_container">
+      <img src={logo} alt="Positivus Free" className="navbar-logo" />
+
+      <div className="menu_icon" onClick={toggleMenu}>
+        {menuAberto ? <X /> : <TextAlignJustify />}
+      </div>
+
+      <div className={`links_uteis ${menuAberto ? "active" : ""}`}>
+        <Link to="/" onClick={() => setMenuAberto(false)}>
           About us
         </Link>
-        <Link typeof="" to="/">
+        <Link to="/" onClick={() => setMenuAberto(false)}>
           Services
         </Link>
-        <Link typeof="" to="/">
+        <Link to="/" onClick={() => setMenuAberto(false)}>
           Use Cases
         </Link>
-        <Botao type="outlined" texto="Get your free proposal" />
+        <Botao type="outlined" texto="Request a quote" />
       </div>
     </nav>
   );

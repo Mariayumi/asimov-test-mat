@@ -1,0 +1,20 @@
+/* Hero Section */
+.hero-animated-image-small {
+  display: none;
+}
+
+.hero-animated-image-large {
+  display: block;
+}
+
+@media (max-width: 1024px) {
+  .hero-animated-image-large {
+    display: none;
+  }
+
+  .hero-animated-image-small {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

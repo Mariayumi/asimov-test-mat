@@ -1,5 +1,8 @@
-import { little_guy, rings_stars } from "../../assets";
-import Botao from "../../components/botao/botao";
+import "./make_things.css";
+import "../../page.css";
+import { guy_stars, rings_horizontal } from "../../../assets";
+import AnimatedImages from "../../../components/animated_images/animated_images";
+import Botao from "../../../components/botao/botao";
 
 export default function MakeThingsSection() {
   return (
@@ -14,10 +17,17 @@ export default function MakeThingsSection() {
           <Botao type="primary" texto={"Get your free proposal"} />
         </div>
 
-        {/* Container relativo para as imagens */}
         <div className="make-things-images">
-          <img src={rings_stars} alt="rings_stars" className="img-bg" />
-          <img src={little_guy} alt="little_guy" className="img-character" />
+          <AnimatedImages
+            imageSrc={guy_stars}
+            staticImageSrc={rings_horizontal}
+            altText="Megafone"
+            containerWidth="60%"
+            containerHeight="250%"
+            imageWidth="100%"
+            imageHeight="100%"
+            rotateAmplitude={20}
+          />
         </div>
       </div>
     </section>

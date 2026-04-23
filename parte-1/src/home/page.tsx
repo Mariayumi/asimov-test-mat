@@ -1,12 +1,13 @@
-import CaseStudiesSection from "./sections/case_studies";
-import HeroSection from "./sections/hero";
-import MakeThingsSection from "./sections/make_things";
-import ServicesSection from "./sections/services";
+import CaseStudiesSection from "./sections/case_studies/case_studies";
+import HeroSection from "./sections/hero/hero";
+import MakeThingsSection from "./sections/make_things/make_things";
+import ServicesSection from "./sections/services/services";
+import "../index.css";
 import "./page.css";
 
 export default function Home() {
   return (
-    <main style={{ display: "flex", flexDirection: "column", gap: "140px" }}>
+    <main className="main-home">
       <HeroSection />
       <ServicesSection />
       <MakeThingsSection />
