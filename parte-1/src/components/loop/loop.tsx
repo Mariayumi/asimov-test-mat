@@ -10,9 +10,14 @@ interface LogoItem {
 interface LogoLoopProps {
   logos: LogoItem[];
   speed?: number;
+  direction?: "left" | "right";
 }
 
-export default function LogoLoop({ logos, speed = 20 }: LogoLoopProps) {
+export default function LogoLoop({
+  logos,
+  speed = 20,
+  direction = "left",
+}: LogoLoopProps) {
   const duplicatedLogos = [...logos, ...logos];
 
   return (
@@ -21,7 +26,7 @@ export default function LogoLoop({ logos, speed = 20 }: LogoLoopProps) {
         <motion.div
           className="logo-loop-track"
           animate={{
-            x: ["0%", "-50%"],
+            x: direction === "left" ? ["-50%", "0%"] : ["0%", "-50%"],
           }}
           transition={{
             duration: speed,

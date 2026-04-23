@@ -5,7 +5,7 @@
   gap: 40px;
 }
 
-@media (max-width: 1310px) {
+@media (max-width: 1140px) {
   .services-cards-container {
     display: grid;
     grid-template-columns: 1fr;
