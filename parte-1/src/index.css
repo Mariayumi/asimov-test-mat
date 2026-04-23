@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Space+Grotesk:wght@300..700&display=swap");
+
+:root {
+  --green: #b9ff66;
+  --dark: #191a23;
+  --grey: #f3f3f3;
+  --white: #ffffff;
+  --black: #000000;
+}
+
+body {
+  font-family: "Space Grotesk", sans-serif !important;
+  background-color: var(--white);
+  padding: 60px 100px;
+}
+
+h1 {
+  font-family: "Space Grotesk", sans-serif !important;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 3.75rem;
+  margin: 0;
+}
+
+h2 {
+  font-family: "Space Grotesk", sans-serif !important;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+h3 {
+  font-family: "Space Grotesk", sans-serif !important;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 1.875rem;
+  margin: 0;
+}
+
+h4 {
+  font-family: "Space Grotesk", sans-serif !important;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+p {
+  font-family: "Space Grotesk", sans-serif !important;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 1.125rem;
+  margin: 0;
+}
+
+.main-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+
+@media (max-width: 1024px) {
+  body {
+    padding: 40px 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 20px 40px;
+  }
+
+  .main-layout {
+    gap: 60px;
+  }
+
+  h1 {
+    font-size: 2.688rem !important;
+  }
+
+  h2 {
+    font-size: 2.25rem !important;
+  }
+
+  h3 {
+    font-size: 1.625rem !important;
+  }
+
+  h4 {
+    font-size: 1.125rem !important;
+  }
+
+  p {
+    font-size: 1rem !important;
+  }
+}
+
+@media (max-width: 368px) {
+  body {
+    padding: 10px 20px;
+  }
+}

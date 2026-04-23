@@ -1,0 +1,39 @@
+/* Make Things Section */
+.make_things_section {
+  display: flex;
+  background-color: var(--grey);
+  border-radius: 45px;
+  padding: 60px;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.make-things-content {
+  max-width: 50%;
+  display: grid;
+  gap: 26px;
+}
+
+.make-things-images {
+  position: relative;
+  width: 40%;
+  height: 200px;
+  top: -150px;
+}
+
+@media (max-width: 1024px) {
+  .make-things-images {
+    display: none;
+  }
+
+  .make-things-content {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .make_things_section {
+    padding: 40px;
+  }
+}

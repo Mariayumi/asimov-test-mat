@@ -1,0 +1,59 @@
+/* Home */
+.main-home {
+  display: flex;
+  flex-direction: column;
+  gap: 140px;
+}
+
+/* Geral */
+.titulo-section {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  margin-bottom: 85px;
+
+  h2 {
+    border-radius: 7px;
+    padding: 7px;
+    display: inline;
+    width: fit-content;
+    background-color: var(--green);
+  }
+
+  p {
+    width: 50%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .main-home {
+    gap: 80px;
+  }
+
+  .titulo-section {
+    p {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .main-home {
+    gap: 60px;
+  }
+
+  .titulo-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 375px) {
+  .titulo-section {
+    margin-bottom: 40px;
+  }
+}

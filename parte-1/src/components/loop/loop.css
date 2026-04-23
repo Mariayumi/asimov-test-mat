@@ -1,0 +1,45 @@
+.logo-loop-container {
+  width: 100%;
+  overflow: hidden;
+  background: transparent;
+}
+
+.logo-loop-mask {
+  display: flex;
+  width: 100%;
+}
+
+.logo-loop-track {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  white-space: nowrap;
+}
+
+.logo-item {
+  flex-shrink: 0;
+  display: block;
+  transition: filter 0.3s ease;
+}
+
+.logo-item img {
+  height: 48px;
+  width: auto;
+  filter: grayscale(100%) contrast(50%);
+  transition: filter 0.8s ease;
+}
+
+.logo-item:hover img {
+  filter: grayscale(0%) contrast(100%);
+  transition: filter 0.5s ease;
+}
+
+@media (max-width: 768px) {
+  .logo-loop-track {
+    gap: 40px;
+  }
+
+  .logo-item img {
+    height: 32px;
+  }
+}
