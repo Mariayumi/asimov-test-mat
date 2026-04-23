@@ -14,6 +14,7 @@
     background-color 0.3s ease;
   border: 1px solid transparent;
   outline: none;
+  text-align: center;
 }
 
 .botao:hover {
@@ -29,6 +30,7 @@
   z-index: 2;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
 }
 
@@ -40,11 +42,9 @@
   height: 100%;
   z-index: 1;
   pointer-events: none;
-  background: radial-gradient(
-    circle at var(--x, 0px) var(--y, 0px),
-    rgba(255, 255, 255, 0.15) 0%,
-    transparent 50%
-  );
+  background: radial-gradient(circle at var(--x, 0px) var(--y, 0px),
+      rgba(255, 255, 255, 0.15) 0%,
+      transparent 50%);
   opacity: 0;
   transition: opacity 0.3s ease;
 }
@@ -65,11 +65,9 @@
 }
 
 .btn-outlined .btn-glare {
-  background: radial-gradient(
-    circle at var(--x, 0px) var(--y, 0px),
-    rgba(0, 0, 0, 0.05) 0%,
-    transparent 50%
-  );
+  background: radial-gradient(circle at var(--x, 0px) var(--y, 0px),
+      rgba(0, 0, 0, 0.05) 0%,
+      transparent 50%);
 }
 
 .btn-link {
@@ -86,6 +84,7 @@
   .botao {
     font-size: 18px;
     padding: 15px 30px;
+    width: 100%
   }
 }
 

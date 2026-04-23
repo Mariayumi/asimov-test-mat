@@ -25,16 +25,9 @@ const clientLogos = [
 
 export default function HeroSection() {
   return (
-    <section style={{ display: "flex", flexDirection: "column", gap: "70px" }}>
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "space-between",
-          gap: "10px",
-        }}
-      >
-        <div style={{ display: "grid", gap: "35px" }}>
+    <section className="hero-container">
+      <div className="hero-content">
+        <div className="hero-text-container">
           <h1>Navigating the digital landscape for success</h1>
 
           <div className="hero-animated-image-small">
@@ -73,6 +66,9 @@ export default function HeroSection() {
       </div>
       <div className="carousel-section">
         <LogoLoop logos={clientLogos} speed={40} />
+        <div className="carousel-container-small">
+          <LogoLoop logos={clientLogos} speed={40} direction="right" />
+        </div>
       </div>
     </section>
   );

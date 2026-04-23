@@ -70,7 +70,14 @@ export default function AnimatedImages({
     <figure
       ref={ref}
       className="tilted-card-figure"
-      style={{ height: containerHeight, width: containerWidth }}
+      style={
+        {
+          "--container-height": containerHeight,
+          "--container-width": containerWidth,
+          "--image-height": imageHeight,
+          "--image-width": imageWidth,
+        } as React.CSSProperties
+      }
       onMouseMove={handleMouse}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
@@ -81,7 +88,6 @@ export default function AnimatedImages({
           src={staticImageSrc}
           alt="Background element"
           className="tilted-card-static"
-          style={{ width: imageWidth, height: imageHeight }}
         />
       )}
 
@@ -89,8 +95,6 @@ export default function AnimatedImages({
       <motion.div
         className="tilted-card-inner"
         style={{
-          width: imageWidth,
-          height: imageHeight,
           rotateX,
           rotateY,
           scale,
@@ -100,7 +104,6 @@ export default function AnimatedImages({
           src={imageSrc}
           alt={altText}
           className="tilted-card-img"
-          style={{ width: imageWidth, height: imageHeight }}
         />
       </motion.div>
     </figure>

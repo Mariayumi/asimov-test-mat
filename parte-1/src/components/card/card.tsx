@@ -16,13 +16,13 @@ export interface CardProps {
 export default function Card(props: CardProps) {
   return (
     <div className={`${props.className} card ${props.theme || "grey"}`}>
-      <div className="card-content">
-        <div style={{ display: "flex", flexDirection: "column" }}>
-          <h3>{props.titulo1}</h3>
-          {props.titulo2 && <h3>{props.titulo2}</h3>}
-        </div>
+      <div className="card-title-container">
+        <h3>{props.titulo1}</h3>
+        {props.titulo2 && <h3>{props.titulo2}</h3>}
+      </div>
 
-        <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+      <div className="card-container">
+        <div className="card-link-container">
           <img
             src={props.theme === "dark" ? arrow_light : arrow_dark}
             alt="arrow"
@@ -30,10 +30,11 @@ export default function Card(props: CardProps) {
           />
           <Link to={props.link}>Learn more</Link>
         </div>
+        {props.imagem && (
+          <img src={props.imagem} alt={props.titulo1} className="card-img" />
+        )}
       </div>
-      {props.imagem && (
-        <img src={props.imagem} alt={props.titulo1} className="card-img" />
-      )}
+
     </div>
   );
 }

@@ -8,9 +8,7 @@ import Home from "./home/page";
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <BrowserRouter>
-      <section
-        style={{ display: "flex", flexDirection: "column", gap: "70px" }}
-      >
+      <section className="main-layout">
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />

@@ -35,28 +35,13 @@
       width: 100%;
     }
   }
-
-  .hero-animated-image-large {
-    display: none;
-  }
-
-  .hero-animated-image-small {
-    display: block;
-  }
-
-  .make-things-images {
-    display: none;
-  }
-
-  .make-things-content {
-    max-width: 100%;
-  }
 }
 
 @media (max-width: 768px) {
   .main-home {
     gap: 60px;
   }
+
   .titulo-section {
     display: flex;
     flex-direction: column;
@@ -68,19 +53,7 @@
 }
 
 @media (max-width: 375px) {
-  .main-home {
-    gap: 25px;
-  }
-
   .titulo-section {
-    margin-bottom: 20px;
-  }
-}
-
-@media (max-width: 1310px) {
-  .services-cards-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 40px;
+    margin-bottom: 40px;
   }
 }

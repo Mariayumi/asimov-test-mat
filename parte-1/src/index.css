@@ -54,9 +54,19 @@ p {
   margin: 0;
 }
 
+.main-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+
 @media (max-width: 768px) {
   body {
     padding: 20px;
+  }
+
+  .main-layout {
+    gap: 60px;
   }
 
   h1 {

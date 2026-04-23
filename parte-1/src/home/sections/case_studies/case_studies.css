@@ -44,11 +44,26 @@
     border-radius: 0;
   }
 
+  .case-study {
+    min-height: 140px;
+
+    a {
+      font-size: 16px;
+
+      .case-study-arrow {
+        width: 16px;
+      }
+    }
+  }
+
   .case-study-wrapper {
     background-color: var(--dark);
     padding: 70px 60px;
     border-radius: 45px;
     min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .vertical-divider {
@@ -61,6 +76,13 @@
     background-color: var(--dark);
     padding: 40px;
     border-radius: 45px;
-    min-width: 300px;
+    min-width: 50vw;
+    min-height: 20vh;
+  }
+}
+
+@media (max-width: 368px) {
+  .case-study-wrapper {
+    min-height: 30vh;
   }
 }

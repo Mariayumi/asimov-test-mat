@@ -40,7 +40,7 @@ export default function CaseStudiesSection() {
               <div className="case-study">
                 <p>{caseStudy.description}</p>
                 <Link to={caseStudy.link}>
-                  Learn More <img src={arrow_green} alt="Arrow" />
+                  Learn More <img src={arrow_green} alt="Arrow" className="case-study-arrow" />
                 </Link>
               </div>
             </div>

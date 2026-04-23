@@ -13,7 +13,11 @@ export default function Navbar() {
   };
 
   useEffect(() => {
-    document.body.style.overflow = menuAberto ? "hidden" : "unset";
+    if (menuAberto) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
   }, [menuAberto]);
 
   return (
@@ -25,6 +29,9 @@ export default function Navbar() {
       </div>
 
       <div className={`links_uteis ${menuAberto ? "active" : ""}`}>
+        <div>
+
+        </div>
         <Link to="/" onClick={() => setMenuAberto(false)}>
           About us
         </Link>
@@ -34,7 +41,9 @@ export default function Navbar() {
         <Link to="/" onClick={() => setMenuAberto(false)}>
           Use Cases
         </Link>
-        <Botao type="outlined" texto="Request a quote" />
+        <div className="navbar-button-container">
+          <Botao type="outlined" texto="Request a quote" />
+        </div>
       </div>
     </nav>
   );

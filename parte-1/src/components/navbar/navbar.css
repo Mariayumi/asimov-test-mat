@@ -2,7 +2,6 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 0;
 
   .links_uteis {
     display: flex !important;
@@ -52,8 +51,15 @@ a:hover {
     background-color: white;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     transition: 0.4s ease-in-out;
     z-index: 1000;
+  }
+
+  .navbar-button-container {
+    display: flex;
+    justify-content: center;
+    width: 70%
   }
 
   .links_uteis.active {
