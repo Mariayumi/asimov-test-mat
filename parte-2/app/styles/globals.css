@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Space+Grotesk:wght@300..700&display=swap");
+@import "tailwindcss";
+
+:root {
+  --dark: #09090b;
+  --light: #ffffff;
+
+  --blue-900: #12131c;
+  --blue-variant: #00aceb;
+  --blue: #20d6ee;
+  --blue-100: #73d6d882;
+
+  --grey: rgba(240, 240, 240, 0.71);
+  --grey-100: #d1d5db;
+  --grey-500: #2f303a;
+
+  --green: #96d945;
+
+  --yellow: #f7bf26;
+  --yellow-variant: #f19c13;
+  --yellow-100: #f7bf261f;
+
+  --background: var(--light);
+  --background-100: #acbec23c;
+  --foreground: var(--blue-900);
+
+  --texto-principal: var(--blue-900);
+  --texto-secundario: var(--grey-500);
+
+  --grid-color: rgba(150, 218, 230, 0.233);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-space-grotesk: var(--font-space-grotesk);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: var(--blue-900);
+    --foreground: var(--light);
+    --blue-variant: #8df2ff;
+    --blue: #20d6ee;
+    --blue-100: #73d6d882;
+    --grey: #282933;
+    --grey-100: rgba(255, 255, 255, 0.2);
+    --green: #96d945;
+    --yellow: #fcca16;
+    --yellow-variant: #ffe06e;
+    --yellow-100: #fcca162f;
+
+    --texto-principal: var(--light);
+    --texto-secundario: #d1d5db;
+
+    --background-100: #3a3a3a5b;
+
+    --grid-color: rgba(255, 255, 255, 0.064);
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-space-grotesk), sans-serif;
+}
