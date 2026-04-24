@@ -28,7 +28,7 @@ export default function Card(props: CardProps) {
             alt="arrow"
             className="card-icone"
           />
-          <Link to={props.link}>Learn more</Link>
+          <Link to={props.link || "/"}>Learn more</Link>
         </div>
         {props.imagem && (
           <div className="card-img-container">
