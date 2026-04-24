@@ -7,3 +7,8 @@
    
 3. O que você ajustou manualmente e por quê?
    Manualmente eu alterei o espaçamento do design, algumas cores e variações e certos textos para deixar mais condizente com a proposta do teste.
+
+## Deploys
+parte 1: https://asimov-test-mat-avce.vercel.app/
+
+parte-2: https://asimov-test-mat-parte-2.vercel.app/
