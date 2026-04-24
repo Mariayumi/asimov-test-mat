@@ -6,6 +6,7 @@ Esta etapa consistiu na criação completa de uma Hero Section de alta conversã
 Como não havia um Figma base, utilizei referências de interfaces high-end do mercado tech disponibilizadas no teste.
 - Estética: Design limpo, focado em tipografia nítida e elementos visuais que remetem à tecnologia e inovação.
 - UX Copy: Organização estratégica da headline, subheadline e benefícios (bullets) para guiar o olhar do usuário até os CTAs.
+- Figma: https://www.figma.com/design/u050KOnEmFNYSTvBX0Wjfy/Asimov---Parte--2?node-id=0-1&t=HiiujpcI75PMcnRw-1
 
 ## 🛠️ Stack Tecnológica
 - React + Next.js: Utilizado para garantir performance, SEO e a melhor estrutura de roteamento.
