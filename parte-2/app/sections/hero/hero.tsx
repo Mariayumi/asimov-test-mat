@@ -36,7 +36,7 @@ export default function Hero() {
       {/* BACKGROUND */}
       <ShapeGrid />
 
-      <div className="relative z-10 w-full max-w-[1280px] px-4 md:px-8 grid grid-cols-12 gap-6 lg:gap-10 justify-between items-center">
+      <div className="relative z-10 w-full max-w-[1600px] px-4 md:px-8 grid grid-cols-12 gap-6 lg:gap-10 justify-between items-center">
         <div className=" relative z-10 col-span-12 xl:col-span-6 flex flex-col gap-6 text-center items-center xl:text-left xl:items-start">
           <span className="text-sm lg:text-lg text-[var(--yellow)] border border-[var(--yellow)] bg-[var(--yellow-100)] rounded-full px-[25px] py-1 font-medium w-fit">
             Python + Inteligência Artificial
