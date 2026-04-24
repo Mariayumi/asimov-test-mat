@@ -1,36 +1,19 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Parte 2 - Criação do zero
+## 🎯 Objetivo do Projeto
+Esta etapa consistiu na criação completa de uma Hero Section de alta conversão para um curso de Python e IA, partindo do zero (sem design prévio). O desafio foi traduzir o conteúdo textual em uma interface moderna, intuitiva e visualmente impactante.
 
-## Getting Started
+## 🎨 Conceito Visual e Inspirações
+Como não havia um Figma base, utilizei referências de interfaces high-end do mercado tech disponibilizadas no teste.
+- Estética: Design limpo, focado em tipografia nítida e elementos visuais que remetem à tecnologia e inovação.
+- UX Copy: Organização estratégica da headline, subheadline e benefícios (bullets) para guiar o olhar do usuário até os CTAs.
 
-First, run the development server:
+## 🛠️ Stack Tecnológica
+- React + Next.js: Utilizado para garantir performance, SEO e a melhor estrutura de roteamento.
+- TailwindCSS: Escolhido como ferramenta principal de estilização para permitir um desenvolvimento ágil, customizável e totalmente responsivo.
+- React Bits: Implementação de animações modernas para elevar a experiência visual e o dinamismo da página.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🤖 IA como Aceleradora
+Nesta etapa, a Inteligência Artificial foi integrada ao fluxo de trabalho para:
+- Aceleração de Código: Auxílio na estruturação de componentes complexos.
+- Aprendizado Rápido: Implementação da biblioteca React Bits, permitindo aplicar animações fluidas em tempo recorde.
+- Refinamento de Design: Apoio na concepção de layouts que seguem as melhores práticas de design moderno (Dark Mode, espaçamentos equilibrados e hierarquia visual).
